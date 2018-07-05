@@ -3511,3 +3511,15 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-07-05 09:52:09.279  WARN 13936 --- [http-nio-8098-exec-4] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
 2018-07-05 09:52:14.765  INFO 13936 --- [http-nio-8098-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
 2018-07-05 09:57:03.974  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:02:03.976  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:07:03.978  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:12:03.981  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:17:03.985  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:22:03.991  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:27:03.996  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:32:03.999  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:37:04.002  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:42:04.006  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:47:04.008  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-05 10:51:14.204  WARN 13936 --- [http-nio-8098-exec-8] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/api/frusers] in DispatcherServlet with name 'dispatcherServlet'
+2018-07-05 10:52:04.010  INFO 13936 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

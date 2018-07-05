@@ -25,12 +25,12 @@ public class HesapHareketiRestController {
 	
 //-----------------------------------HESAP HAREKET�----------------------------------
 
-	@RequestMapping(value="/hesapHareketleri", method = RequestMethod.GET)
+	@RequestMapping(value="/hesapHareketleri", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")
 	public List<HesapHareketi> getHesapHareketleri(){
 		return hesapHareketleriService.getHesapHareketleri();
 	}
 	
-	@PostMapping("/hesapHareketleri")
+	@PostMapping(value = "/hesapHareketleri")
 	public HesapHareketi addHesapHareketi(@RequestBody HesapHareketi hesapHareketi){
 		
 		hesapHareketi.setId(0);
@@ -40,7 +40,7 @@ public class HesapHareketiRestController {
 		return hesapHareketi;
 	}
 	
-	@PutMapping("/hesapHareketleri")
+	@PutMapping(value = "/hesapHareketleri", produces = "application/json; charset=UTF-8")
 	public HesapHareketi updateHesapHareketi(@RequestBody HesapHareketi hesapHareketi){
 		
 		hesapHareketleriService.saveHesapHareketi(hesapHareketi);

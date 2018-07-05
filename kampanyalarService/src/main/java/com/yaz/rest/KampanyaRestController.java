@@ -23,12 +23,12 @@ public class KampanyaRestController {
 	
 //-----------------------------------KAMPANYALAR----------------------------------
 	
-	@GetMapping("/kampanyalar")
+	@GetMapping(value = "/kampanyalar", produces = "application/json; charset=UTF-8")
 	public List<Kampanya> getKampanyalar(){
 		return kampanyaService.getKampanyalar();
 	}
 	
-	@PostMapping("/kampanyalar")
+	@PostMapping(value = "/kampanyalar", produces = "application/json; charset=UTF-8")
 	public Kampanya addKampanya(@RequestBody Kampanya kampanya){
 		
 		kampanya.setId(0);
@@ -38,7 +38,7 @@ public class KampanyaRestController {
 		return kampanya;
 	}
 	
-	@PutMapping("/kampanyalar")
+	@PutMapping(value = "/kampanyalar", produces = "application/json; charset=UTF-8")
 	public Kampanya updateKampanya(@RequestBody Kampanya kampanya){
 		
 		kampanyaService.saveKampanya(kampanya);

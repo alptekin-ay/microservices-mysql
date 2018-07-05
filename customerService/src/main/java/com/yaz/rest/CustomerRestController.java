@@ -23,12 +23,12 @@ public class CustomerRestController {
 	@Autowired
 	private CustomerService customerService;
 	
-	@GetMapping("/frusers")
+	@GetMapping(value = "/frusers", produces = "application/json; charset=UTF-8")
 	public List<Customer> getCustomers(){
 		return customerService.getCustomers();
 	}
 	
-	@PostMapping("/frusers")
+	@PostMapping(value = "/frusers", produces = "application/json; charset=UTF-8")
 	public Customer addCustomer(@RequestBody Customer theCustomer){
 		
 		theCustomer.setId(0);
@@ -38,7 +38,7 @@ public class CustomerRestController {
 		return theCustomer;
 	}
 	
-	@PutMapping("/frusers")
+	@PutMapping(value = "/frusers", produces = "application/json; charset=UTF-8")
 	public Customer updateCustomer(@RequestBody Customer theCustomer){
 		
 		customerService.saveCustomer(theCustomer);
@@ -59,7 +59,7 @@ public class CustomerRestController {
 		return "Deleted Customer id - " + customerId;
 	}
 	
-	@PostMapping("/frusers/user/pass")
+	@PostMapping(value = "/frusers/user/pass", produces = "application/json; charset=UTF-8")
 	public Customer getCustomer(@RequestHeader String userName, @RequestHeader String password){
 		Customer theCustomer = customerService.getCustomer(userName, password);
 		
@@ -69,7 +69,7 @@ public class CustomerRestController {
 		return theCustomer;
 	}
 	
-	@PostMapping("/frusers/user")
+	@PostMapping(value = "/frusers/user", produces = "application/json; charset=UTF-8")
 	public Customer getCustomer(@RequestHeader String userName){
 		Customer theCustomer = customerService.getCustomer(userName);
 		
@@ -79,7 +79,7 @@ public class CustomerRestController {
 		return theCustomer;
 	}
 	
-	@PostMapping("/frusers/find")
+	@PostMapping(value = "/frusers/find", produces = "application/json; charset=UTF-8")
 	public Customer getCustomer(@RequestHeader int customerId){
 		Customer theCustomer = customerService.getCustomer(customerId);
 		
@@ -90,7 +90,7 @@ public class CustomerRestController {
 	}
 	
 	
-	@PostMapping("/frusers/multiple")
+	@PostMapping(value = "/frusers/multiple", produces = "application/json; charset=UTF-8")
 	public Customer[] addCustomers(@RequestBody Customer[] theCustomers){
 		
 		for(int i = 0; i < theCustomers.length; i++) {
