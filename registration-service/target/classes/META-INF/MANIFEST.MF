@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: registration-server
+Implementation-Version: 0.0.1-com.yaz
+Built-By: Alptekin
+Implementation-Vendor-Id: com.yaz
+Build-Jdk: 1.8.0_171
+Implementation-URL: http://projects.spring.io/spring-boot/registration
+ -server/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
